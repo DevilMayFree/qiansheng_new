@@ -24,8 +24,9 @@ $(function(){
     bindMouseWheelEvent();
     bindMenuClick();
     section3Init();
-    section4Init(); 
-    section5Init();     
+    section4Init();
+    // fixme disable section5
+    // section5Init();
     section7Init();
     section8Init();
     window.onload=()=>{
@@ -173,11 +174,11 @@ function bindMouseWheelEvent() {
                                     scrollUpChangeBlock(target);
                                 }
                                 break;
-                            case 5:
-                                if($(".section-5 .main-wrapper").scrollTop() === 0 && secttion5CanChangeSection){
-                                    scrollUpChangeBlock(target);
-                                }
-                                break;
+                            // case 5:
+                            //     if($(".section-5 .main-wrapper").scrollTop() === 0 && secttion5CanChangeSection){
+                            //         scrollUpChangeBlock(target);
+                            //     }
+                            //     break;
                             default:
                                 scrollUpChangeBlock(target);
                                 break;
@@ -218,14 +219,14 @@ function bindMouseWheelEvent() {
                                     scrollDownChangeBlock(target);
                                 }
                                 break;
-                            case 5:
-                                let scrollTop=$(".section-5 .main-wrapper").scrollTop();
-                                let clientHeight = $(".section-5 .main-wrapper").height();
-                                let scrollHeight = $(".section.section-5 .main-container").height();
-                                if(Math.abs(scrollTop + clientHeight - scrollHeight) < 1 && secttion5CanChangeSection){
-                                    scrollDownChangeBlock(target);
-                                }
-                                break;
+                            // case 5:
+                            //     let scrollTop=$(".section-5 .main-wrapper").scrollTop();
+                            //     let clientHeight = $(".section-5 .main-wrapper").height();
+                            //     let scrollHeight = $(".section.section-5 .main-container").height();
+                            //     if(Math.abs(scrollTop + clientHeight - scrollHeight) < 1 && secttion5CanChangeSection){
+                            //         scrollDownChangeBlock(target);
+                            //     }
+                            //     break;
                             case 8:
                                 break
                             default:
