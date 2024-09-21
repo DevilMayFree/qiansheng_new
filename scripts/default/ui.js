@@ -124,7 +124,8 @@ function bindMouseWheelEvent() {
             loadingHasZoomed=true;
             setTimeout(function () {
                 $("body").addClass("canScroll");
-                canChangeBlock=true; 
+                canChangeBlock=true;
+                $('.mask-section').css('z-index','-99')
             }, timeGap);
         }
         /*
