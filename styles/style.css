@@ -1362,6 +1362,20 @@ header .menu-toggle .bars .bar.bar-3 {
     transition-delay: .8s
 }
 
+.tip-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 21px 40px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 25rem;
+    bottom: 25rem;
+    border-radius: 60px;
+    border: 1px solid black;
+}
+
 #index .section.section-0 .cookie-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1372,6 +1386,19 @@ header .menu-toggle .bars .bar.bar-3 {
     bottom: 54px;
     border-radius: 100px;
     border: 1px solid white
+}
+
+.tip-block .close-btn {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    margin-right: 20px;
+    -webkit-transition: background .3s;
+    transition: background .3s
 }
 
 #index .section.section-0 .cookie-block .close-btn {
@@ -1385,6 +1412,19 @@ header .menu-toggle .bars .bar.bar-3 {
     margin-right: 20px;
     -webkit-transition: background .3s;
     transition: background .3s
+}
+
+.tip-block .close-btn:hover {
+    background: #fc671a
+}
+
+.tip-block .close-btn:hover i {
+    color: white
+}
+
+.tip-block .close-btn i {
+    -webkit-transition: color .3s;
+    transition: color .3s
 }
 
 #index .section.section-0 .cookie-block .close-btn:hover {
@@ -3164,12 +3204,29 @@ header .menu-toggle .bars .bar.bar-3 {
         height: 74px
     }
 
+    .tip-block {
+        max-width: 385px;
+        width: calc(100% - 40px);
+        padding: 12px 14px;
+        /*bottom: 23px;*/
+        font-size: 14px;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
     #index .section.section-0 .cookie-block {
         max-width: 385px;
         width: calc(100% - 40px);
         padding: 12px 14px;
         bottom: 23px;
         font-size: 14px
+    }
+
+    .tip-block .close-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin-right: 14px
     }
 
     #index .section.section-0 .cookie-block .close-btn {

@@ -91,6 +91,9 @@ function layoutConfig(){
     $("header .menu-toggle").click(() => {
         $("header").toggleClass("open");
     })
+    $(".tip-block .close-btn").click(() => {
+        $(".tip-block").hide();
+    })
     $(".cookie-block .close-btn").click(() => {
         $(".cookie-block").hide();
         document.cookie = "hasRead=true"; 
